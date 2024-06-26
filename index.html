@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenShare - Frontend
+
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <img src="./assets/OpenShare.jpg" style="height: 50px;"  alt="" srcset="">
+</header>
+<body>
+    
+<section class="upload-container">
+    
+    <div class="drop-zone">
+   
+        <div class="icon-container">
+            <img src="./assets/file1.svg" draggable="false" alt="file" class="center dragged" >
+            <img src="./assets/file1.svg" draggable="false" alt="file" class="left dragged" >
+            <img src="./assets/file1.svg" draggable="false" alt="file" class="right dragged" >
+        
+        </div>
+        <form  method="post" enctype="multipart/form-data">
+        <input type="file" name="myfile" id="fileInput">
+        <div class="title">Drop your Files here or <span class="browseBtn">browse</span></div>
+    </form>
+ 
+    
+    </div>
+    <div class="progress-container">
+        
+        <div class="bg-progress" id="progress">
+            <div class="inner-container">
+            <div class="title1"></div>
+            <div class="percent-container"><span id="percent">  </span></div>
+        <div class="small-progress-bar"></div>   
+
+        </div>
+
+           
+        </div>
+    </div>
+
+    <div id="link" class="progress-container">
+<!-- File Download link  -->
+
+<div class="clip">
+    <img src="./assets/clipboard.svg" 
+    onclick="myFunction()"
+    
+    alt="" srcset="">
+</div>
+</div>
+
+  
+</section>
+<section>
+    <img src="./assets/logo1.svg" 
+    style="height:500px;
+            position: absolute;
+            left: 50%;    
+    
+    " alt="" srcset="">
+</section>
+
+<script type="module" src="index.js"></script>
+</body>
+</html>
